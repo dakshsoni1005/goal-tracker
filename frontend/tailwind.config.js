@@ -9,14 +9,14 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#B2A999', // Muted Sand accent (10%)
-          dark: '#9E9585',
-          light: '#D8CCBB',
+          DEFAULT: '#4D403A', // Cacao accent (10%)
+          dark: '#3B312C',
+          light: '#A3968D',
         },
         secondary: {
-          DEFAULT: '#D8CCBB', // Soft Beige
-          dark: '#C4B7A6',
-          light: '#F3EEE6',
+          DEFAULT: '#A3968D', // Taupe
+          dark: '#8E8178',
+          light: '#DFDACF',
         },
         success: {
           DEFAULT: '#10B981',
@@ -34,16 +34,16 @@ export default {
           light: '#F87171',
         },
         slateBg: {
-          light: '#F3EEE6', // Dominant background (60%) - Warm Ivory
-          dark: '#F3EEE6',  // Forced same as light
+          light: '#FAF8F5', // Dominant background (60%) - Pearl
+          dark: '#FAF8F5',  // Forced same as light
         },
         cardBg: {
-          light: '#FFFFFF', // Secondary structures (30%)
+          light: '#FFFFFF', // Secondary structures (30%) - White
           dark: '#FFFFFF',  // Forced same as light
         },
         borderCol: {
-          light: '#D8CCBB',
-          dark: '#D8CCBB',
+          light: '#DFDACF', // Khaki borders
+          dark: '#DFDACF',
         }
       },
       borderRadius: {

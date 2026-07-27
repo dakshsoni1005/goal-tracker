@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #B2A999; /* Accent (10%) - Muted Sand */
-  --color-primary-dark: #9E9585;
-  --color-primary-light: #D8CCBB;
+  --color-primary: #4D403A; /* Accent (10%) - Cacao */
+  --color-primary-dark: #3B312C;
+  --color-primary-light: #A3968D;
   
-  --color-secondary: #D8CCBB; /* Secondary Accent - Soft Beige */
-  --color-secondary-dark: #C4B7A6;
-  --color-secondary-light: #F3EEE6;
+  --color-secondary: #A3968D; /* Secondary Accent - Taupe */
+  --color-secondary-dark: #8E8178;
+  --color-secondary-light: #DFDACF;
 
   --color-success: #10B981;
   --color-success-dark: #059669;
@@ -22,15 +22,15 @@
   --color-danger-light: #F87171;
 
   /* 60% Dominant Background Tones (Forced Light Theme) */
-  --color-slateBg-light: #F3EEE6; /* Warm Ivory background */
-  --color-slateBg-dark: #F3EEE6;  /* Forced same as Light */
+  --color-slateBg-light: #FAF8F5; /* Pearl background */
+  --color-slateBg-dark: #FAF8F5;  /* Forced same as Light */
 
   /* 30% Card & Boundary Tones */
   --color-cardBg-light: #FFFFFF;
   --color-cardBg-dark: #FFFFFF;
 
-  --color-borderCol-light: #D8CCBB; /* Soft Beige borders */
-  --color-borderCol-dark: #D8CCBB;
+  --color-borderCol-light: #DFDACF; /* Khaki borders */
+  --color-borderCol-dark: #DFDACF;
 
   --radius-2xl: 16px;
 
@@ -41,7 +41,7 @@
 @layer base {
   body {
     background-color: var(--color-slateBg-light);
-    color: #423C35; /* 30% Text tone - Dark Charcoal Ivory */
+    color: #4D403A; /* 30% Text tone - Dark Cacao */
     font-family: 'Inter', 'system-ui', sans-serif;
     transition-property: color, background-color;
     transition-duration: 200ms;
@@ -49,7 +49,7 @@
   
   body.dark {
     background-color: var(--color-slateBg-light);
-    color: #423C35;
+    color: #4D403A;
   }
 }
 
@@ -84,13 +84,13 @@
 .glass-panel {
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(8px);
-  border: 1px solid rgba(216, 204, 187, 0.8);
+  border: 1px solid rgba(223, 218, 207, 0.8);
 }
 
 .dark .glass-panel {
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(8px);
-  border: 1px solid rgba(216, 204, 187, 0.8);
+  border: 1px solid rgba(223, 218, 207, 0.8);
 }
 
 /* Pomodoro progress ring keyframe animation */

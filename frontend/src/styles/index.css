@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #4B3F6E; /* Primary Accent (10%) - Deep Purple */
-  --color-primary-dark: #372E54;
-  --color-primary-light: #6C5F8D;
+  --color-primary: #A48D78; /* Accent (10%) - Desert Rock */
+  --color-primary-dark: #8B7662;
+  --color-primary-light: #CBB9A4;
   
-  --color-secondary: #6C5F8D; /* Secondary Accent - Medium Indigo-Purple */
-  --color-secondary-dark: #554A70;
-  --color-secondary-light: #9C8CB9;
+  --color-secondary: #CBB9A4; /* Secondary Accent - Soft Sandstone */
+  --color-secondary-dark: #B4A08A;
+  --color-secondary-light: #E6DAC8;
 
   --color-success: #10B981;
   --color-success-dark: #059669;
@@ -22,15 +22,15 @@
   --color-danger-light: #F87171;
 
   /* 60% Dominant Background Tones */
-  --color-slateBg-light: #DCD7D5; /* Soft Warm Gray */
-  --color-slateBg-dark: #1B1726;  /* Deep Violet-Slate */
+  --color-slateBg-light: #F4F1EA; /* Porcelain Mist background */
+  --color-slateBg-dark: #201C18;  /* Deep Warm Charcoal */
 
   /* 30% Card & Boundary Tones */
-  --color-cardBg-light: #FFFFFF;
-  --color-cardBg-dark: #262033;
+  --color-cardBg-light: #FAF9F6; /* Feather White cards */
+  --color-cardBg-dark: #2B2621;
 
-  --color-borderCol-light: #CFC9C7; /* Soft boundary */
-  --color-borderCol-dark: #372E44;
+  --color-borderCol-light: #E6DAC8; /* Creamed Oat borders */
+  --color-borderCol-dark: #3A342E;
 
   --radius-2xl: 16px;
 
@@ -41,7 +41,7 @@
 @layer base {
   body {
     background-color: var(--color-slateBg-light);
-    color: #4B3F6E; /* 30% Text tone - Deep Purple */
+    color: #4B4136; /* 30% Text tone - Dark Warm Charcoal */
     font-family: 'Inter', 'system-ui', sans-serif;
     transition-property: color, background-color;
     transition-duration: 200ms;
@@ -49,7 +49,7 @@
   
   body.dark {
     background-color: var(--color-slateBg-dark);
-    color: #DCD7D5;
+    color: #F4F1EA;
   }
 }
 

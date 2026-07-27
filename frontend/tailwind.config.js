@@ -9,14 +9,14 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#4B3F6E', // Deep purple accent (10%)
-          dark: '#372E54',
-          light: '#6C5F8D',
+          DEFAULT: '#A48D78', // Desert Rock accent (10%)
+          dark: '#8B7662',
+          light: '#CBB9A4',
         },
         secondary: {
-          DEFAULT: '#6C5F8D', // Medium purple
-          dark: '#554A70',
-          light: '#9C8CB9',
+          DEFAULT: '#CBB9A4', // Soft Sandstone
+          dark: '#B4A08A',
+          light: '#E6DAC8',
         },
         success: {
           DEFAULT: '#10B981',
@@ -34,16 +34,16 @@ export default {
           light: '#F87171',
         },
         slateBg: {
-          light: '#DCD7D5', // Dominant background (60%)
-          dark: '#1B1726',
+          light: '#F4F1EA', // Dominant background (60%)
+          dark: '#201C18',
         },
         cardBg: {
-          light: '#FFFFFF', // Secondary structures (30%)
-          dark: '#262033',
+          light: '#FAF9F6', // Secondary structures (30%)
+          dark: '#2B2621',
         },
         borderCol: {
-          light: '#CFC9C7',
-          dark: '#372E44',
+          light: '#E6DAC8',
+          dark: '#3A342E',
         }
       },
       borderRadius: {

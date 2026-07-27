@@ -26,7 +26,7 @@ import {
 import Card, { CardHeader, CardTitle, CardContent } from '../../components/ui/Card.jsx';
 import Badge from '../../components/ui/Badge.jsx';
 
-const CHART_COLORS = ['#A48D78', '#CBB9A4', '#E6DAC8', '#544136', '#8B7662', '#B4A08A'];
+const CHART_COLORS = ['#B2A999', '#D8CCBB', '#F3EEE6', '#423C35', '#6E645A', '#9E9585'];
 
 const AnalyticsPage = () => {
   const [dashboardStats, setDashboardStats] = useState(null);
@@ -164,8 +164,8 @@ const AnalyticsPage = () => {
                     }}
                   />
                   <Legend verticalAlign="top" height={36} wrapperStyle={{ fontSize: '10px', fontWeight: 'bold' }} />
-                  <Line type="monotone" dataKey="Goals" stroke="#A48D78" strokeWidth={2.5} activeDot={{ r: 6 }} />
-                  <Line type="monotone" dataKey="Habits" stroke="#CBB9A4" strokeWidth={2.5} />
+                  <Line type="monotone" dataKey="Goals" stroke="#B2A999" strokeWidth={2.5} activeDot={{ r: 6 }} />
+                  <Line type="monotone" dataKey="Habits" stroke="#D8CCBB" strokeWidth={2.5} />
                 </LineChart>
               </ResponsiveContainer>
             )}
@@ -244,7 +244,7 @@ const AnalyticsPage = () => {
                     fontSize: '11px',
                   }}
                 />
-                <Bar dataKey="Goals" fill="#A48D78" radius={[4, 4, 0, 0]} barSize={24} />
+                <Bar dataKey="Goals" fill="#B2A999" radius={[4, 4, 0, 0]} barSize={24} />
               </BarChart>
             </ResponsiveContainer>
           )}

@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #A48D78; /* Accent (10%) - Desert Rock */
-  --color-primary-dark: #8B7662;
-  --color-primary-light: #CBB9A4;
+  --color-primary: #B2A999; /* Accent (10%) - Muted Sand */
+  --color-primary-dark: #9E9585;
+  --color-primary-light: #D8CCBB;
   
-  --color-secondary: #CBB9A4; /* Secondary Accent - Soft Sandstone */
-  --color-secondary-dark: #B4A08A;
-  --color-secondary-light: #E6DAC8;
+  --color-secondary: #D8CCBB; /* Secondary Accent - Soft Beige */
+  --color-secondary-dark: #C4B7A6;
+  --color-secondary-light: #F3EEE6;
 
   --color-success: #10B981;
   --color-success-dark: #059669;
@@ -21,35 +21,35 @@
   --color-danger-dark: #DC2626;
   --color-danger-light: #F87171;
 
-  /* 60% Dominant Background Tones */
-  --color-slateBg-light: #F4F1EA; /* Porcelain Mist background */
-  --color-slateBg-dark: #201C18;  /* Deep Warm Charcoal */
+  /* 60% Dominant Background Tones (Forced Light Theme) */
+  --color-slateBg-light: #F3EEE6; /* Warm Ivory background */
+  --color-slateBg-dark: #F3EEE6;  /* Forced same as Light */
 
   /* 30% Card & Boundary Tones */
-  --color-cardBg-light: #FAF9F6; /* Feather White cards */
-  --color-cardBg-dark: #2B2621;
+  --color-cardBg-light: #FFFFFF;
+  --color-cardBg-dark: #FFFFFF;
 
-  --color-borderCol-light: #E6DAC8; /* Creamed Oat borders */
-  --color-borderCol-dark: #3A342E;
+  --color-borderCol-light: #D8CCBB; /* Soft Beige borders */
+  --color-borderCol-dark: #D8CCBB;
 
   --radius-2xl: 16px;
 
   --shadow-soft: 0 4px 20px -2px rgba(17, 24, 39, 0.05), 0 2px 6px -1px rgba(17, 24, 39, 0.03);
-  --shadow-soft-dark: 0 4px 20px -2px rgba(0, 0, 0, 0.2), 0 2px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-soft-dark: 0 4px 20px -2px rgba(17, 24, 39, 0.05), 0 2px 6px -1px rgba(17, 24, 39, 0.03);
 }
 
 @layer base {
   body {
     background-color: var(--color-slateBg-light);
-    color: #4B4136; /* 30% Text tone - Dark Warm Charcoal */
+    color: #423C35; /* 30% Text tone - Dark Charcoal Ivory */
     font-family: 'Inter', 'system-ui', sans-serif;
     transition-property: color, background-color;
     transition-duration: 200ms;
   }
   
   body.dark {
-    background-color: var(--color-slateBg-dark);
-    color: #F4F1EA;
+    background-color: var(--color-slateBg-light);
+    color: #423C35;
   }
 }
 
@@ -69,7 +69,7 @@
 }
 
 .dark ::-webkit-scrollbar-thumb {
-  background: #475569;
+  background: #cbd5e1;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -77,20 +77,20 @@
 }
 
 .dark ::-webkit-scrollbar-thumb:hover {
-  background: #64748b;
+  background: #94a3b8;
 }
 
 /* Glassmorphism utility card styling */
 .glass-panel {
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(8px);
-  border: 1px solid rgba(226, 232, 240, 0.8);
+  border: 1px solid rgba(216, 204, 187, 0.8);
 }
 
 .dark .glass-panel {
-  background: rgba(30, 41, 59, 0.7);
+  background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(8px);
-  border: 1px solid rgba(51, 65, 85, 0.8);
+  border: 1px solid rgba(216, 204, 187, 0.8);
 }
 
 /* Pomodoro progress ring keyframe animation */

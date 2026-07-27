@@ -144,9 +144,9 @@ const CalendarPage = () => {
                       key={g._id}
                       className="text-[9px] font-bold p-1 rounded-lg border leading-tight truncate flex items-center space-x-1"
                       style={{
-                        backgroundColor: g.priority === 'high' ? 'rgba(239, 68, 68, 0.08)' : g.priority === 'medium' ? 'rgba(245, 158, 11, 0.08)' : 'rgba(164, 141, 120, 0.08)',
-                        borderColor: g.priority === 'high' ? 'rgba(239, 68, 68, 0.2)' : g.priority === 'medium' ? 'rgba(245, 158, 11, 0.2)' : 'rgba(164, 141, 120, 0.2)',
-                        color: g.priority === 'high' ? '#EF4444' : g.priority === 'medium' ? '#D97706' : '#8B7662',
+                        backgroundColor: g.priority === 'high' ? 'rgba(239, 68, 68, 0.08)' : g.priority === 'medium' ? 'rgba(245, 158, 11, 0.08)' : 'rgba(178, 169, 153, 0.15)',
+                        borderColor: g.priority === 'high' ? 'rgba(239, 68, 68, 0.2)' : g.priority === 'medium' ? 'rgba(245, 158, 11, 0.2)' : 'rgba(178, 169, 153, 0.35)',
+                        color: g.priority === 'high' ? '#EF4444' : g.priority === 'medium' ? '#D97706' : '#5C544A',
                       }}
                       title={`Goal: ${g.title} (${g.status})`}
                     >

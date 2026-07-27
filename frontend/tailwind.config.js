@@ -9,14 +9,14 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#A48D78', // Desert Rock accent (10%)
-          dark: '#8B7662',
-          light: '#CBB9A4',
+          DEFAULT: '#B2A999', // Muted Sand accent (10%)
+          dark: '#9E9585',
+          light: '#D8CCBB',
         },
         secondary: {
-          DEFAULT: '#CBB9A4', // Soft Sandstone
-          dark: '#B4A08A',
-          light: '#E6DAC8',
+          DEFAULT: '#D8CCBB', // Soft Beige
+          dark: '#C4B7A6',
+          light: '#F3EEE6',
         },
         success: {
           DEFAULT: '#10B981',
@@ -34,16 +34,16 @@ export default {
           light: '#F87171',
         },
         slateBg: {
-          light: '#F4F1EA', // Dominant background (60%)
-          dark: '#201C18',
+          light: '#F3EEE6', // Dominant background (60%) - Warm Ivory
+          dark: '#F3EEE6',  // Forced same as light
         },
         cardBg: {
-          light: '#FAF9F6', // Secondary structures (30%)
-          dark: '#2B2621',
+          light: '#FFFFFF', // Secondary structures (30%)
+          dark: '#FFFFFF',  // Forced same as light
         },
         borderCol: {
-          light: '#E6DAC8',
-          dark: '#3A342E',
+          light: '#D8CCBB',
+          dark: '#D8CCBB',
         }
       },
       borderRadius: {
@@ -51,7 +51,7 @@ export default {
       },
       boxShadow: {
         'soft': '0 4px 20px -2px rgba(17, 24, 39, 0.05), 0 2px 6px -1px rgba(17, 24, 39, 0.03)',
-        'soft-dark': '0 4px 20px -2px rgba(0, 0, 0, 0.2), 0 2px 6px -1px rgba(0, 0, 0, 0.1)',
+        'soft-dark': '0 4px 20px -2px rgba(17, 24, 39, 0.05), 0 2px 6px -1px rgba(17, 24, 39, 0.03)',
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],

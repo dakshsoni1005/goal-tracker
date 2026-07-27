@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #F7CBCA; /* Accent Pink (10%) */
-  --color-primary-dark: #E3B4B3;
-  --color-primary-light: #FCE8E7;
+  --color-primary: #4B3F6E; /* Primary Accent (10%) - Deep Purple */
+  --color-primary-dark: #372E54;
+  --color-primary-light: #6C5F8D;
   
-  --color-secondary: #B3D3D3; /* Accent Sage/Teal */
-  --color-secondary-dark: #8FBFBF;
-  --color-secondary-light: #D5EBEB;
+  --color-secondary: #6C5F8D; /* Secondary Accent - Medium Indigo-Purple */
+  --color-secondary-dark: #554A70;
+  --color-secondary-light: #9C8CB9;
 
   --color-success: #10B981;
   --color-success-dark: #059669;
@@ -22,15 +22,15 @@
   --color-danger-light: #F87171;
 
   /* 60% Dominant Background Tones */
-  --color-slateBg-light: #F1F7F7;
-  --color-slateBg-dark: #1A2323;
+  --color-slateBg-light: #DCD7D5; /* Soft Warm Gray */
+  --color-slateBg-dark: #1B1726;  /* Deep Violet-Slate */
 
-  /* 30% Secondary Card & Structural Tones */
+  /* 30% Card & Boundary Tones */
   --color-cardBg-light: #FFFFFF;
-  --color-cardBg-dark: #242E2E;
+  --color-cardBg-dark: #262033;
 
-  --color-borderCol-light: #D5E5E5;
-  --color-borderCol-dark: #2E3B3B;
+  --color-borderCol-light: #CFC9C7; /* Soft boundary */
+  --color-borderCol-dark: #372E44;
 
   --radius-2xl: 16px;
 
@@ -41,7 +41,7 @@
 @layer base {
   body {
     background-color: var(--color-slateBg-light);
-    color: #435050; /* Charcoal sage text color for 30% ratio */
+    color: #4B3F6E; /* 30% Text tone - Deep Purple */
     font-family: 'Inter', 'system-ui', sans-serif;
     transition-property: color, background-color;
     transition-duration: 200ms;
@@ -49,7 +49,7 @@
   
   body.dark {
     background-color: var(--color-slateBg-dark);
-    color: #D2DFDF;
+    color: #DCD7D5;
   }
 }
 

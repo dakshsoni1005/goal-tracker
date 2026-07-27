@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #2563EB;
-  --color-primary-dark: #1D4ED8;
-  --color-primary-light: #60A5FA;
+  --color-primary: #F7CBCA; /* Accent Pink (10%) */
+  --color-primary-dark: #E3B4B3;
+  --color-primary-light: #FCE8E7;
   
-  --color-secondary: #6366F1;
-  --color-secondary-dark: #4F46E5;
-  --color-secondary-light: #818CF8;
+  --color-secondary: #B3D3D3; /* Accent Sage/Teal */
+  --color-secondary-dark: #8FBFBF;
+  --color-secondary-light: #D5EBEB;
 
   --color-success: #10B981;
   --color-success-dark: #059669;
@@ -21,14 +21,16 @@
   --color-danger-dark: #DC2626;
   --color-danger-light: #F87171;
 
-  --color-slateBg-light: #F8FAFC;
-  --color-slateBg-dark: #0F172A;
+  /* 60% Dominant Background Tones */
+  --color-slateBg-light: #F1F7F7;
+  --color-slateBg-dark: #1A2323;
 
+  /* 30% Secondary Card & Structural Tones */
   --color-cardBg-light: #FFFFFF;
-  --color-cardBg-dark: #1E293B;
+  --color-cardBg-dark: #242E2E;
 
-  --color-borderCol-light: #E2E8F0;
-  --color-borderCol-dark: #334155;
+  --color-borderCol-light: #D5E5E5;
+  --color-borderCol-dark: #2E3B3B;
 
   --radius-2xl: 16px;
 
@@ -39,7 +41,7 @@
 @layer base {
   body {
     background-color: var(--color-slateBg-light);
-    color: var(--color-slate-800);
+    color: #435050; /* Charcoal sage text color for 30% ratio */
     font-family: 'Inter', 'system-ui', sans-serif;
     transition-property: color, background-color;
     transition-duration: 200ms;
@@ -47,7 +49,7 @@
   
   body.dark {
     background-color: var(--color-slateBg-dark);
-    color: var(--color-slate-200);
+    color: #D2DFDF;
   }
 }
 

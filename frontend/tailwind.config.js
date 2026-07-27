@@ -9,14 +9,14 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#2563EB',
-          dark: '#1D4ED8',
-          light: '#60A5FA',
+          DEFAULT: '#F7CBCA', // Pink accent (10%)
+          dark: '#E3B4B3',
+          light: '#FCE8E7',
         },
         secondary: {
-          DEFAULT: '#6366F1',
-          dark: '#4F46E5',
-          light: '#818CF8',
+          DEFAULT: '#B3D3D3', // Sage accent
+          dark: '#8FBFBF',
+          light: '#D5EBEB',
         },
         success: {
           DEFAULT: '#10B981',
@@ -34,16 +34,16 @@ export default {
           light: '#F87171',
         },
         slateBg: {
-          light: '#F8FAFC',
-          dark: '#0F172A',
+          light: '#F1F7F7', // Dominant background (60%)
+          dark: '#1A2323',
         },
         cardBg: {
-          light: '#FFFFFF',
-          dark: '#1E293B',
+          light: '#FFFFFF', // Secondary structures (30%)
+          dark: '#242E2E',
         },
         borderCol: {
-          light: '#E2E8F0',
-          dark: '#334155',
+          light: '#D5E5E5',
+          dark: '#2E3B3B',
         }
       },
       borderRadius: {
@@ -54,7 +54,7 @@ export default {
         'soft-dark': '0 4px 20px -2px rgba(0, 0, 0, 0.2), 0 2px 6px -1px rgba(0, 0, 0, 0.1)',
       },
       fontFamily: {
-        sans: ['Inter', 'Outfit', 'system-ui', 'sans-serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
       }
     },
   },

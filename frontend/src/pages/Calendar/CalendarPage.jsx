@@ -144,9 +144,9 @@ const CalendarPage = () => {
                       key={g._id}
                       className="text-[9px] font-bold p-1 rounded-lg border leading-tight truncate flex items-center space-x-1"
                       style={{
-                        backgroundColor: g.priority === 'high' ? 'rgba(239, 68, 68, 0.08)' : g.priority === 'medium' ? 'rgba(245, 158, 11, 0.08)' : 'rgba(59, 130, 246, 0.08)',
-                        borderColor: g.priority === 'high' ? 'rgba(239, 68, 68, 0.2)' : g.priority === 'medium' ? 'rgba(245, 158, 11, 0.2)' : 'rgba(59, 130, 246, 0.2)',
-                        color: g.priority === 'high' ? '#EF4444' : g.priority === 'medium' ? '#D97706' : '#2563EB',
+                        backgroundColor: g.priority === 'high' ? 'rgba(239, 68, 68, 0.08)' : g.priority === 'medium' ? 'rgba(245, 158, 11, 0.08)' : 'rgba(164, 141, 120, 0.08)',
+                        borderColor: g.priority === 'high' ? 'rgba(239, 68, 68, 0.2)' : g.priority === 'medium' ? 'rgba(245, 158, 11, 0.2)' : 'rgba(164, 141, 120, 0.2)',
+                        color: g.priority === 'high' ? '#EF4444' : g.priority === 'medium' ? '#D97706' : '#8B7662',
                       }}
                       title={`Goal: ${g.title} (${g.status})`}
                     >
@@ -158,7 +158,7 @@ const CalendarPage = () => {
                   {cell.reminders.map((r) => (
                     <div
                       key={r._id}
-                      className="text-[9px] font-bold p-1 rounded-lg border bg-indigo-50/40 border-indigo-100 text-indigo-500 leading-tight truncate flex items-center space-x-1"
+                      className="text-[9px] font-bold p-1 rounded-lg border bg-secondary/15 border-secondary/35 text-[#8B7662] leading-tight truncate flex items-center space-x-1"
                       title={`Reminder: ${r.title}`}
                     >
                       <Clock className="h-2 w-2 flex-shrink-0" />
@@ -216,7 +216,7 @@ const CalendarPage = () => {
                     key={g._id}
                     className="p-2.5 rounded-xl border text-[10px] font-bold space-y-1 bg-cardBg-light dark:bg-cardBg-dark"
                     style={{
-                      borderLeft: `4px solid ${g.priority === 'high' ? '#EF4444' : g.priority === 'medium' ? '#F59E0B' : '#2563EB'}`
+                      borderLeft: `4px solid ${g.priority === 'high' ? '#EF4444' : g.priority === 'medium' ? '#F59E0B' : '#A48D78'}`
                     }}
                   >
                     <span className="text-[9px] uppercase tracking-wider text-slate-400">Goal</span>
@@ -226,10 +226,10 @@ const CalendarPage = () => {
                 ))}
 
                 {dayReminders.map((r) => (
-                  <div key={r._id} className="p-2.5 rounded-xl border border-indigo-100 bg-indigo-50/20 text-[10px] font-bold space-y-1">
-                    <span className="text-[9px] uppercase tracking-wider text-indigo-400">Reminder</span>
-                    <p className="text-indigo-600 dark:text-indigo-400 font-bold leading-tight truncate">{r.title}</p>
-                    <p className="text-[9px] text-slate-400 flex items-center mt-1">
+                  <div key={r._id} className="p-2.5 rounded-xl border border-secondary/35 bg-secondary/15 text-[10px] font-bold space-y-1 text-[#8B7662]">
+                    <span className="text-[9px] uppercase tracking-wider text-[#A48D78]">Reminder</span>
+                    <p className="text-primary font-bold leading-tight truncate">{r.title}</p>
+                    <p className="text-[9px] text-slate-450 flex items-center mt-1">
                       <Clock className="h-3 w-3 mr-1" />
                       <span>{new Date(r.triggerTime).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</span>
                     </p>

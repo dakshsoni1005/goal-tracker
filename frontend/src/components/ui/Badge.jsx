@@ -9,8 +9,8 @@ const Badge = ({
   const baseStyles = 'inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold tracking-wide border transition-all';
   
   const variants = {
-    primary: 'bg-blue-50 text-blue-700 border-blue-200 dark:bg-blue-900/30 dark:text-blue-400 dark:border-blue-800',
-    secondary: 'bg-indigo-50 text-indigo-700 border-indigo-200 dark:bg-indigo-900/30 dark:text-indigo-400 dark:border-indigo-800',
+    primary: 'bg-primary/10 text-primary-dark border-primary/20 dark:bg-primary/5 dark:text-primary-light dark:border-primary/20',
+    secondary: 'bg-secondary/15 text-[#8B7662] border-secondary/35 dark:bg-secondary/10 dark:text-secondary-light dark:border-secondary/20',
     success: 'bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-900/30 dark:text-emerald-400 dark:border-emerald-800',
     warning: 'bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-900/30 dark:text-amber-400 dark:border-amber-800',
     danger: 'bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-900/30 dark:text-rose-400 dark:border-rose-800',

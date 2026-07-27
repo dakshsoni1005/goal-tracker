@@ -169,7 +169,7 @@ const DashboardPage = () => {
               <span>{completedGoalsList.length} completed today</span>
             </p>
           </div>
-          <div className="p-3 bg-blue-500/10 text-blue-500 rounded-2xl">
+          <div className="p-3 bg-primary/10 text-primary rounded-2xl">
             <CheckCircle className="h-6 w-6" />
           </div>
         </Card>
@@ -335,8 +335,8 @@ const DashboardPage = () => {
                 <AreaChart data={chartData} margin={{ top: 10, right: 10, left: -25, bottom: 0 }}>
                   <defs>
                     <linearGradient id="colorGoals" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="5%" stopColor="#2563EB" stopOpacity={0.2}/>
-                      <stop offset="95%" stopColor="#2563EB" stopOpacity={0}/>
+                      <stop offset="5%" stopColor="#A48D78" stopOpacity={0.2}/>
+                      <stop offset="95%" stopColor="#A48D78" stopOpacity={0}/>
                     </linearGradient>
                   </defs>
                   <XAxis dataKey="day" stroke="#94a3b8" fontSize={10} tickLine={false} />
@@ -349,7 +349,7 @@ const DashboardPage = () => {
                       fontSize: '11px',
                     }}
                   />
-                  <Area type="monotone" dataKey="Completed" stroke="#2563EB" strokeWidth={2} fillOpacity={1} fill="url(#colorGoals)" />
+                  <Area type="monotone" dataKey="Completed" stroke="#A48D78" strokeWidth={2} fillOpacity={1} fill="url(#colorGoals)" />
                 </AreaChart>
               </ResponsiveContainer>
             )}

@@ -4,9 +4,7 @@ const ThemeContext = createContext(null);
 
 export const ThemeProvider = ({ children }) => {
   // Option: 'light' | 'dark' | 'system'
-  const [theme, setTheme] = useState(() => {
-    return localStorage.getItem('theme') || 'light';
-  });
+  const [theme, setTheme] = useState('light');
 
   useEffect(() => {
     const root = window.document.documentElement;
